@@ -15,9 +15,18 @@ const ImageUpload = ({ onChange, value }: ImageUploadProps) => {
       uploadPreset="testing"
       options={{ maxFiles: 1 }}
       onSuccess={(result) => {
-        if (typeof result === "object" && result?.info?.secure_url) {
+        if (
+          typeof result === "object" &&
+          result !== null &&
+          "info" in result &&
+          typeof result.info === "object" &&
+          result.info !== null &&
+          "secure_url" in result.info &&
+          typeof (result.info as CloudinaryUploadWidgetInfo).secure_url === "string"
+        ) {
+          const secureUrl = (result.info as CloudinaryUploadWidgetInfo).secure_url;
           console.log("✅ Upload success:", result);
-          onChange(result.info.secure_url);
+          onChange(secureUrl);
         } else {
           console.warn("⚠️ Unexpected upload result:", result);
         }
