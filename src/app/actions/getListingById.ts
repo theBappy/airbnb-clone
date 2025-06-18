@@ -1,5 +1,4 @@
 import prisma from '@/app/libs/prismadb'
-import { AnyARecord } from 'dns';
 interface IParams {
     listingId: string;
 }
@@ -16,9 +15,7 @@ export default async function getListingById(
             user: true
         }
     })
-    if(!listing) {
-        return null
-    }
+    if(!listing) return null;
     return {
         ...listing,
         createdAt: listing.createdAt.toISOString(),
