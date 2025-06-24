@@ -35,7 +35,6 @@
       </a>
     </td>
   </tr>
-  <tr>
     <td align="center">
       <a href="https://next-auth.js.org/">
         <img src="https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=nextauthdotjs&logoColor=white" alt="NextAuth.js" />
@@ -68,8 +67,15 @@
         <img src="https://img.shields.io/badge/React_Leaflet-3DDC84?style=for-the-badge&logo=react&logoColor=black" alt="React Leaflet" />
       </a>
     </td>
+    <td align="center">
+      <a href="https://opensource.org/licenses/MIT">
+        <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="React Leaflet" />
+      </a>
+    </td>
   </tr>
 </table>
+
+
 
 
 ---
