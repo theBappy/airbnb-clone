@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
 
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)  
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)  
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)  
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=blue)](https://www.prisma.io/)  
+[![NextAuth.js](https://img.shields.io/badge/NextAuth.js-000000?style=for-the-badge&logo=nextauthdotjs&logoColor=white)](https://next-auth.js.org/)  
+[![Cloudinary](https://img.shields.io/badge/Cloudinary-405DE6?style=for-the-badge&logo=cloudinary&logoColor=white)](https://cloudinary.com/)  
+[![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=zustand&logoColor=white)](https://github.com/pmndrs/zustand)  
+[![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white)](https://react-hook-form.com/)  
+[![React Icons](https://img.shields.io/badge/React_Icons-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react-icons.github.io/react-icons/)  
+[![React Leaflet](https://img.shields.io/badge/React_Leaflet-3DDC84?style=for-the-badge&logo=react&logoColor=black)](https://react-leaflet.js.org/)
+
+---
+# Airbnb Clone
+## Overview
+
+A full-stack Airbnb clone built with Next.js 13 (App Router), TypeScript, Prisma, and Tailwind CSS.  
+It features user authentication, real-time listings, reservations, image uploads with Cloudinary, and more.
+
+---
+
+## Features
+
+- User authentication with NextAuth.js and Prisma adapter  
+- Dynamic search and filtering of listings  
+- Reservation system with date selection  
+- Profile management and avatar uploads  
+- Responsive UI built with Tailwind CSS  
+- State management with Zustand  
+- Map integration using React Leaflet  
+- Form handling with React Hook Form  
+- Toast notifications with React Hot Toast
+
+---
+
+## Tech Stack
+
+| Technology       | Purpose                |
+|------------------|------------------------|
+| Next.js 13       | React framework        |
+| TypeScript       | Type safety            |
+| Prisma           | ORM for database       |
+| MongoDB         | Database              |
+| Tailwind CSS     | Styling and layout     |
+| NextAuth.js      | Authentication         |
+| Cloudinary       | Image uploads          |
+| Zustand          | State management       |
+| React Hook Form  | Forms                  |
+| React Leaflet    | Maps                   |
+
+_\*Database depends on your Prisma config_
+
+---
+
+## Installation
+
+1. Clone the repo  
 ```bash
+git clone https://github.com/yourusername/airbnb-clone.git
+cd airbnb-clone
+Install dependencies
+
+bash
+Always show details
+
+Copy
+npm install
+# or
+yarn install
+Create .env file and add environment variables for:
+
+Database URL
+
+NextAuth secret
+
+Cloudinary credentials
+
+Run Prisma migrations
+
+bash
+Always show details
+
+Copy
+npx prisma migrate dev
+Run the development server
+
+bash
+Always show details
+
+Copy
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Scripts
+npm run dev - Starts Next.js in development mode
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+npm run build - Builds the production app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm start - Runs the built app
 
-## Learn More
+npm run lint - Runs ESLint
 
-To learn more about Next.js, take a look at the following resources:
+Contributing
+Feel free to open issues or pull requests.
+Please follow the existing code style and commit message conventions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+License
+MIT License ©theBappy
