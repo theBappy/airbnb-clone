@@ -110,31 +110,6 @@ It features user authentication, real-time listings, reservations, image uploads
 | React Hook Form  | Forms                  |
 | React Leaflet    | Maps                   |
 
-### Structure of main src/app-->
-├───actions
-├───api
-│   ├───favorites
-│   │   └───[listingId]
-│   ├───listings
-│   │   └───[listingId]
-│   ├───register
-│   └───reservations
-│       └───[reservationId]
-├───components
-│   ├───Inputs
-│   ├───listings
-│   ├───modals
-│   └───navbar
-├───favorites
-├───hooks
-├───libs
-├───listings
-│   └───[listingId]
-├───properties
-├───providers
-├───reservations
-├───trips
-└───types
 
 ## Installation
 
